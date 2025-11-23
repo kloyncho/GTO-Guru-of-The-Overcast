@@ -4,7 +4,6 @@ import http from "http";
 
 import { handleMessage } from "./handlers/message.js";
 import { handleLocation } from "./handlers/location.js";
-import { startScheduler } from "./services/scheduler.js";
 
 const token = process.env.TELEGRAM_TOKEN;
 
@@ -36,9 +35,6 @@ console.log("✅ Обработчик сообщений зарегистрир�
 
 bot.on("location", handleLocation(bot, userData));
 console.log("✅ Обработчик геолокации зарегистрирован.");
-
-startScheduler(bot);
-console.log("🔔 Daily Notification Scheduler запущен.");
 
 bot.on("polling_error", (error) => {
   if (error.code !== "EFATAL" && error.code !== "EPIPE") {

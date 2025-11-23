@@ -11,7 +11,6 @@ export const i18n = {
     tomorrow: "Завтра",
     three_days: "3 дні",
     hourly_btn: "⏳ Детально (24г)",
-    notify_btn: "🔔 Налаштування сповіщень",
     change_city: "🔄 Змінити місто",
     invalid_city: "🧐 Некоректна назва міста. Спробуйте ще раз.",
     city_not_found: "🕵️‍♂️ Не вдалося знайти таке місто. Перевірте назву.",
@@ -22,24 +21,6 @@ export const i18n = {
     hum: "💧 Вологість",
     wind: "💨 Вітер",
     forecast_title: "📅 Прогноз на {days}",
-
-    notify_intro:
-      "Налаштування сповіщень 🔔\n\n1. Введіть бажаний час для щоденного прогнозу (наприклад, *08:30*).\n\nПоточне місто: *{city}*",
-    notify_set_success:
-      "✅ Готово! Щоденний прогноз для *{city}* буде приходити о *{time}*.",
-    notify_disable_confirm:
-      "Ви впевнені, що хочете відключити щоденні сповіщення?",
-    notify_disable_success: "❌ Сповіщення відключено.",
-    notify_already_set:
-      "🔔 Ваші поточні налаштування: Щоденний прогноз для *{city}* о *{time}*.",
-    notify_enable: "Ввести час",
-    notify_disable: "Вимкнути сповіщення",
-    notify_time_change: "Змінити час",
-    notify_no_city:
-      "Будь ласка, спочатку оберіть місто, надіславши назву або геопозицію, щоб налаштувати сповіщення.",
-    confirm_yes: "Так, відключити",
-    confirm_no: "Скасувати",
-    confirm_no_msg: "Скасування. Сповіщення залишаються увімкненими.",
 
     outfit_cold: [
       "Брр, морозно! 🥶 Вдягай шапку, шарф і найтеплішу куртку!",
@@ -89,7 +70,6 @@ export const i18n = {
     tomorrow: "Завтра",
     three_days: "3 дня",
     hourly_btn: "⏳ Подробно (24ч)",
-    notify_btn: "🔔 Настройки уведомлений",
     change_city: "🔄 Сменить город",
     invalid_city: "🧐 Некорректное название города. Попробуйте снова.",
     city_not_found: "🕵️‍♂️ Не удалось найти такой город. Проверьте название.",
@@ -100,24 +80,6 @@ export const i18n = {
     hum: "💧 Влажность",
     wind: "💨 Ветер",
     forecast_title: "📅 Прогноз на {days}",
-
-    notify_intro:
-      "Настройка уведомлений 🔔\n\n1. Введите желаемое время для ежедневного прогноза (например, *08:30*).\n\nТекущий город: *{city}*",
-    notify_set_success:
-      "✅ Готово! Ежедневный прогноз для *{city}* будет приходить в *{time}*.",
-    notify_disable_confirm:
-      "Вы уверены, что хотите отключить ежедневные уведомления?",
-    notify_disable_success: "❌ Уведомления отключены.",
-    notify_already_set:
-      "🔔 Ваши текущие настройки: Ежедневный прогноз для *{city}* в *{time}*.",
-    notify_enable: "Ввести время",
-    notify_disable: "Отключить уведомления",
-    notify_time_change: "Изменить время",
-    notify_no_city:
-      "Пожалуйста, сначала выберите город, отправив название или геопозицию, чтобы настроить уведомления.",
-    confirm_yes: "Да, отключить",
-    confirm_no: "Отмена",
-    confirm_no_msg: "Отмена. Уведомления остаются включенными.",
 
     outfit_cold: [
       "Брр, мороз! 🥶 Шапка, шарф, тёплая куртка — обязательно!",
@@ -167,7 +129,6 @@ export const i18n = {
     tomorrow: "Tomorrow",
     three_days: "3 days",
     hourly_btn: "⏳ Detailed (24h)",
-    notify_btn: "🔔 Notification settings",
     change_city: "🔄 Change city",
     invalid_city: "🧐 Invalid city name. Try again.",
     city_not_found: "🕵️‍♂️ City not found. Please check spelling.",
@@ -178,24 +139,6 @@ export const i18n = {
     hum: "💧 Humidity",
     wind: "💨 Wind",
     forecast_title: "📅 Forecast for {days}",
-
-    notify_intro:
-      "Notification settings 🔔\n\n1. Enter the desired time for the daily forecast (e.g., *08:30*).\n\nCurrent city: *{city}*",
-    notify_set_success:
-      "✅ Done! Daily forecast for *{city}* will arrive at *{time}*.",
-    notify_disable_confirm:
-      "Are you sure you want to disable daily notifications?",
-    notify_disable_success: "❌ Notifications disabled.",
-    notify_already_set:
-      "🔔 Your current settings: Daily forecast for *{city}* at *{time}*.",
-    notify_enable: "Enter time",
-    notify_disable: "Disable notifications",
-    notify_time_change: "Change time",
-    notify_no_city:
-      "Please select a city first by sending the name or location to set up notifications.",
-    confirm_yes: "Yes, disable",
-    confirm_no: "Cancel",
-    confirm_no_msg: "Cancel. Notifications remain enabled.",
 
     outfit_cold: [
       "Brr, freezing! 🥶 Hat, scarf, warm jacket — must-have!",
