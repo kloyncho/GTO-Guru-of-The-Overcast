@@ -9,7 +9,7 @@ const token = process.env.TELEGRAM_TOKEN;
 
 if (!token) {
   console.error(
-    "❌ ФАТАЛЬНАЯ ОШИБКА: TELEGRAM_TOKEN не найден в переменных окружения."
+    "FATAL ERROR: TELEGRAM_TOKEN not found in the environment variables."
   );
   process.exit(1);
 }
@@ -17,7 +17,7 @@ if (!token) {
 const userData = new Map();
 
 const bot = new TelegramBot(token, { polling: true });
-console.log("🤖 Telegram Bot инициализирован.");
+console.log("Telegram Bot initialized");
 
 const PORT = process.env.PORT || 10000;
 
@@ -27,14 +27,14 @@ http
     res.end("Bot is running");
   })
   .listen(PORT, () => {
-    console.log(`📡 Fake server is listening on port ${PORT}`);
+    console.log(`server is listening on port ${PORT}`);
   });
 
 bot.on("message", handleMessage(bot, userData));
-console.log("✅ Обработчик сообщений зарегистрирован.");
+console.log("The message handler has been registered.");
 
 bot.on("location", handleLocation(bot, userData));
-console.log("✅ Обработчик геолокации зарегистрирован.");
+console.log("The geolocation handler has been registered.");
 
 bot.on("polling_error", (error) => {
   if (error.code !== "EFATAL" && error.code !== "EPIPE") {
@@ -42,5 +42,5 @@ bot.on("polling_error", (error) => {
 });
 
 console.log(
-  `⏱ Бот работает. Время сервера: ${new Date().toLocaleTimeString("ru-RU")}`
+  `Bot's running; Server time: ${new Date().toLocaleTimeString("ru-RU")}`
 );
