@@ -6,26 +6,26 @@ const envPath = path.resolve(process.cwd(), ".env");
 console.log("Путь к .env:", envPath);
 
 if (!fs.existsSync(envPath)) {
-  console.error("ОШИБКА: .env НЕ НАЙДЕН!");
+  console.error("ERROR: .env NOT FOUND!");
   process.exit(1);
 }
 
 const result = dotenv.config({ path: envPath });
 if (result.error) {
-  console.error("ОШИБКА чтения .env:", result.error);
+  console.error("READ ERROR .env:", result.error);
   process.exit(1);
 }
 
 const { TELEGRAM_TOKEN, WEATHER_API_KEY } = process.env;
 
-console.log("TELEGRAM_TOKEN:", TELEGRAM_TOKEN ? "OK" : "ОТСУТСТВУЕТ");
+console.log("TELEGRAM_TOKEN:", TELEGRAM_TOKEN ? "OK" : "NOT FOUND");
 console.log(
   "WEATHER_API_KEY:",
-  WEATHER_API_KEY ? `OK (длина: ${WEATHER_API_KEY.length})` : "ОТСУТСТВУЕТ"
+  WEATHER_API_KEY ? `OK (length: ${WEATHER_API_KEY.length})` : "NOT FOUND"
 );
 
 if (!TELEGRAM_TOKEN || !WEATHER_API_KEY) {
-  console.error("ОШИБКА: Токены не загружены");
+  console.error("ERROR: tokens not loaded");
   process.exit(1);
 }
 
